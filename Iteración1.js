@@ -7,18 +7,21 @@ const buttonClick = document.body.querySelector("#btnToClick");
 addEventListener('click' , evenToClick);
 function evenToClick(event) {
     console.log(event);
+    console.log("heloclick")
 }
 
 
 // 1.2 Añade un evento 'focus' que ejecute un console.log con el valor del input.
 const selecFocus = document.body.querySelector(".focus");
-selecFocus.addEventListener('focus' , inputFocus);
+selecFocus.addEventListener('focus', inputFocus);
 function inputFocus(event) {
-console.log(event.target.value);
+
+    console.log('hacemos focus y su valor', event.target.value);
 }
 
 // 1.3 Añade un evento 'input' que ejecute un console.log con el valor del input.
 const selecInput = document.body.querySelector(".input");
 selecInput.addEventListener('input' , function (event) {
-    console.log(event.target.value);
+
+    console.log('Valor del input', event.target.value);
 });
